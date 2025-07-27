@@ -1,2 +1,1 @@
-# AI-Novel-frontend
-AI 小说编辑器前端代码
+# AI 小说编辑器 前端代码

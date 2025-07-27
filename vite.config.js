@@ -1,0 +1,26 @@
+import { fileURLToPath, URL } from 'node:url'
+
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import vueDevTools from 'vite-plugin-vue-devtools'
+import path from "node:path";
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [
+    vue(),
+    vueDevTools(),
+  ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'), // 静态路径定义
+    },
+  },
+  server: {
+    port: 3000,
+  },
+  base: '/', // 添加这一行
+  build: {
+    assetsDir: 'assets',
+  }
+})
