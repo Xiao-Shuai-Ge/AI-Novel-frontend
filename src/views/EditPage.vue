@@ -106,6 +106,7 @@
                 @mouseup="handleTextSelection"
                 @input="handleContentChange"
                 ref="contentEditable"
+
             >
             </div>
           </div>
